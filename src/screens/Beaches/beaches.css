@@ -1,0 +1,24 @@
+.imagegallery-beaches {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.imagegallery-beaches-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.6rem;
+    
+	
+}
+.imagegallery-beaches-image {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+    .imagegallery-beaches-images { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 680px) {
+    .imagegallery-beaches-images { grid-template-columns: repeat(1, 1fr); }
+}
